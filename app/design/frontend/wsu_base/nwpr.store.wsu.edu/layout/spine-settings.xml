@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsu_spine>
+	<wsu_themecontrol_layout>
+		<responsive>
+			<fluid_width>fluid</fluid_width>
+			<max_width>1584</max_width>
+			<show_breadcrumbs>1</show_breadcrumbs>
+		</responsive>
+		<spine>
+			<show_storenetwork>0</show_storenetwork>
+		</spine>
+		<product_view>
+			<row_type>side-left</row_type>
+			<padding>pad</padding>
+			<padding_flanks>narrow</padding_flanks>
+			<padding_ends>short</padding_ends>
+		</product_view>
+		<content_area>
+			<row_type>single</row_type>
+			<padding>padded</padding>
+			<padding_flanks>narrow</padding_flanks>
+			<padding_ends>short</padding_ends>
+		</content_area>
+		<catalog_product_view>
+			<used_root>0</used_root>
+		</catalog_product_view>
+	</wsu_themecontrol_layout>
+	<wsu_themecontrol_design>
+		<spine>
+			<spine_color>default</spine_color>
+			<spine_bleed>1</spine_bleed>
+			<spine_tool_bar_color>darkest</spine_tool_bar_color>
+		</spine>
+		<font>
+			<primary_font_family_group>google</primary_font_family_group>
+			<primary_font_family>Open Sans</primary_font_family>
+			<primary_font_weight>300,400,600,700,800</primary_font_weight>
+		</font>
+	</wsu_themecontrol_design>
+
+
+	<wsu_themecontrol>
+		<spine_social>
+			<slot_one>facebook</slot_one><!-- skip, facebook, twitter, youtube, directory, linkedin, pinterest, gplus, flickr, tumblr, custom -->
+			<slot_one_url>https://www.facebook.com/northwestpublicradio</slot_one_url>
+			<slot_one_text>Facebook</slot_one_text>
+
+			<slot_two>twitter</slot_two>
+			<slot_two_url>https://twitter.com/nwpublicradio</slot_two_url>
+			<slot_two_text>Twitter</slot_two_text>
+
+			<slot_three>tumblr</slot_three>
+			<slot_three_url>http://nwpublicradio.tumblr.com/</slot_three_url>
+			<slot_three_text></slot_three_text>
+
+			<slot_four>skip</slot_four>
+			<slot_four_url></slot_four_url>
+			<slot_four_text></slot_four_text>
+
+		</spine_social>
+	</wsu_themecontrol>
+</wsu_spine>
