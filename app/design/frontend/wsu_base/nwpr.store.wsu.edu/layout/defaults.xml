@@ -1,44 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout>
-	<default>
-		<reference name="head">
-			<action method="removeItem"><type>skin_js</type><name>src/js/lightbox.ini.js</name></action>
-			<action method="addItem"><type>skin_css</type><name>css/custom.css</name></action>
-			<action method="addItem"><type>skin_js</type><name>js/jquery.cycle2.min.js</name></action>
-			<action method="addItem"><type>skin_js</type><name>js/jquery.cycle2.carousel.min.js</name></action>
-			<action method="addItem"><type>skin_js</type><name>js/custom.js</name></action>
-		</reference>
+    <default>
+        <reference name="head">
+            <action method="removeItem"><type>skin_js</type><name>src/js/lightbox.ini.js</name></action>
+            <action method="addItem"><type>skin_css</type><name>css/custom.css</name></action>
+            <action method="addItem"><type>skin_js</type><name>js/jquery.cycle2.min.js</name></action>
+            <action method="addItem"><type>skin_js</type><name>js/jquery.cycle2.carousel.min.js</name></action>
+            <action method="addItem"><type>skin_js</type><name>js/custom.js</name></action>
+        </reference>
 
-
-		<reference name="top.links">
-			<!-- Removes 'My Cart' AND 'Checkout' links
-			Default position: 40 and 50 respectively -->
-			<remove name="checkout_cart_link"/>
-			<remove name="checkout_cart_link_custom"/>
-			<!-- To re-add 'My Cart' or 'Checkout' after removing both -->
-			<block type="checkout/links" name="checkout_cart_link_themed">
-				<action method="setData"><name>cart_label</name><value>Cart</value></action>
-				<action method="setData"><name>cart_label_signle</name><value>Cart (%s item)</value></action>
-				<action method="setData"><name>cart_label_full</name><value>Cart (%s items)</value></action>
-				<action method="setData"><name>cart_hide_empty</name><value>0</value></action>
-				<action method="setData"><name>checkout_hide_empty</name><value>1</value></action>
-
-
-				<action method="addCartLink"><position>10</position></action>
-				<action method="addCheckoutLink"><position>11</position></action>
-
-				<action method="makeCompareLink"></action>
-			</block>
-
-		</reference>
-		    <reference name="root">
-				<action method="unsetChild"><name>breadcrumbs</name></action>
-				<reference name="content">
-					<action method="insert"><child>breadcrumbs</child></action>
-				</reference>
-			</reference>	 <!--	<reference name="content">
-           <remove name="breadcrumbs" />
-        </reference>-->
-	</default>
-
+        <reference name="root">
+            <action method="unsetChild"><name>breadcrumbs</name></action>
+            <reference name="content">
+                <action method="insert"><child>breadcrumbs</child></action>
+            </reference>
+        </reference>
+    </default>
 </layout>
