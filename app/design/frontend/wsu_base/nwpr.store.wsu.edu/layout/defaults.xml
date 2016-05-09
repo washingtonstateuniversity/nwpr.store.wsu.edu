@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout>
     <default>
-        <reference name="head">
-            <action method="removeItem"><type>skin_js</type><name>src/js/lightbox.ini.js</name></action>
-            <action method="addItem"><type>skin_css</type><name>css/custom.css</name></action>
-            <action method="addItem"><type>skin_js</type><name>js/jquery.cycle2.min.js</name></action>
-            <action method="addItem"><type>skin_js</type><name>js/jquery.cycle2.carousel.min.js</name></action>
-            <action method="addItem"><type>skin_js</type><name>js/custom.js</name></action>
-        </reference>
 
-        <reference name="root">
-            <action method="unsetChild"><name>breadcrumbs</name></action>
-            <reference name="content">
-                <action method="insert"><child>breadcrumbs</child></action>
-            </reference>
-        </reference>
     </default>
 </layout>
